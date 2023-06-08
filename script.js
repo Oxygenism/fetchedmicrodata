@@ -72,5 +72,13 @@ function generate(container, properties) {
     }
 }
 
-let propContainer = document.getElementById("container");
-generate(propContainer, samplePropData);
+function fakeFetch() {
+    fetch(`https://random-data-api.com/api/v2/banks?size=100`)
+        .then(res => res.json())
+        .then((cat) => {
+            let propContainer = document.querySelector("#container");
+            generate(propContainer, samplePropData);
+        });
+}
+
+fakeFetch();
