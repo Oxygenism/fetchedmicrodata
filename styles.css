@@ -1,0 +1,16 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Calibri;
+}
+
+.container {
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(138deg, #082129 0%, #96dce7 100%);
+}
